@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Autoplay usage demo">
+    <meta name="author" content="David Deutsch">
+    <title>Kitabisa.com - Indonesia's Fundraising Platform</title>
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://assets.kitabisa.cc/images/icons/meta/favicon-16x16.png" />
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <style>
+        *, *:before, *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+
+        body #homepage-pwa {
+            font-family: 'Open Sans', sans-serif;
+            color: #4a4a4a !important;
+        }
+
+        body .owl-theme .owl-dots .active span {
+            background-color: #10A8E5 !important;
+            width: 20px;
+        }
+
+        body #homepage-pwa .row {
+            margin: 0 auto;
+            max-width: 62.5rem;
+            width: 100%;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Yeah i know js should not be in header. Its required for demos.-->
+
+    <!-- javascript -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+
+    <!-- title -->
+    <!--  Demos -->
+    <section id="homepage-pwa" style="margin: 0 auto;max-width: 480px; background: linear-gradient(0deg, #E6F5FB 7.25%, rgba(251, 234, 240, 0) 83.21%);padding-top: 24px;min-height: 100vh;">
+        <div style="text-align: center;padding-left: 16px;padding-right: 16px;">
+            <p style="margin: 0 auto 8px;color: #4a4a4a;">Gabung dengan ribuan gerakan warga bantu warga di aplikasi Kitabisa</p>
+            <h3 style="font-family: 'Open Sans', sans-serif;color: #3a3a3a;font: size 20px;font-weight: 700;margin: 0 auto 16px;">Bantu Biaya Pengobatan</h3>
+        </div>
+        <div class="row">
+        <div class="large-12">
+          <div class="owl-homebanner owl-carousel owl-theme">
+            <div class="item">
+              <img src="assets/home-slide1.png" >
+            </div>
+            <div class="item">
+                <img src="assets/home-slide2.png" >
+              </div>
+              <div class="item">
+                <img src="assets/home-slide3.png" >
+              </div>
+              <div class="item">
+                <img src="assets/home-slide4.png" >
+              </div>
+              <div class="item">
+                <img src="assets/home-slide5.png" >
+              </div>
+          </div>
+          <div style="margin: 0 auto;text-align: center;">
+            <h4 style="font-family: 'Open Sans', sans-serif;font-size: 14px;color: #3a3a3a;font-weight: 700;margin: 0 auto 16px;">Berbagi lebih mudah di aplikasi Kitabisa</h4>
+            <div style="margin: 16px auto 24px;">
+                <div class="nonloop owl-carousel owl-theme">
+                    <div class="item">
+                      <img src="assets/feature-1.png" style="width:173px;height: 24px;" >
+                    </div>
+                    <div class="item">
+                        <img src="assets/feature-2.png" style="width:233px;height: 24px;" >
+                      </div>
+                      <div class="item">
+                        <img src="assets/feature-3.png" style="width:209px;height: 24px;" >
+                      </div>
+                      <div class="item">
+                        <img src="assets/feature-4.png" style="width:234px;height: 24px;">
+                      </div>
+                      <div class="item">
+                        <img src="assets/feature-5.png" style="width:199px;height: 24px;" >
+                      </div>
+                </div>
+            </div>
+            <div style="margin: 0 auto; text-align: center;max-width: 290px;"><a href="https://kitabisa.onelink.me/vsu1/homepageinstall"><img src="assets/download-apps.png" width="100%" alt="Download Aplikasi Kitabisa"></a></div>
+            <div style="margin:24px auto;text-align: center;max-width: 328px;"><a href="#"><img src="assets/back-home.png" width="100%" alt="Download Aplikasi Kitabisa"></a></div>
+          </div>
+          <script>
+            $(document).ready(function() {
+              var owl = $('.owl-homebanner');
+              owl.owlCarousel({
+                stagePadding: 50,
+                center: true,
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+              });
+              $('.nonloop').owlCarousel({
+                    center: true,
+                    items:2,
+                    loop:false,
+                    autoWidth:true,
+                    dots: false,
+                    margin:8,
+                    responsive:{
+                        600:{
+                            items:4
+                        }
+                    }
+                });
+            })
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+  </body>
+</html>
